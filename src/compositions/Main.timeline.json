@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "items": [
     {
       "id": "synchronized-previz",
@@ -10,6 +10,15 @@
         "type": "nested",
         "composition": "HarborPreviz",
         "nestedScale": 0.309375
+      },
+      "layout": {
+        "rect": [
+          43,
+          164,
+          396,
+          223
+        ],
+        "fit": "cover"
       }
     },
     {
@@ -21,6 +30,15 @@
         "type": "nested",
         "composition": "harborShot",
         "nestedScale": 0.309375
+      },
+      "layout": {
+        "rect": [
+          479,
+          164,
+          396,
+          223
+        ],
+        "fit": "cover"
       }
     },
     {
