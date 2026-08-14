@@ -1,3 +1,6 @@
-.framediff-cache/
-framediff-cache/
-out/
+node_modules/
+.svelte-kit/
+build/
+.vite/
+*.log
+.DS_Store

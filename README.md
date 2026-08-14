@@ -1,5 +1,17 @@
 # previz → generative → edit
 
+## Setup
+
+```sh
+git clone --recurse-submodules https://github.com/micromanager3000/framediff-example-previz-to-gen.git
+cd framediff-example-previz-to-gen
+npm install
+npm run dev
+```
+
+FrameDiff is pinned in `vendor/framediff` until its packages are published to npm. Update the
+pin with `git submodule update --remote vendor/framediff`, then validate and commit the gitlink.
+
 The three-stage pipeline in one project: a **three.js previz comp** (one deterministic world,
 three named cameras, cuts as timeline clips) is **baked** to an mp4, that bake feeds a
 **Seedance 2.0 reference-to-video comp** as its motion reference, and a root **edit** presents
@@ -15,8 +27,8 @@ harbor-previz (3d)  ──comp:// ref (bakes on submit)──▶  harborShot (ge
 ## Run it
 
 ```sh
-npm install          # from the repo root — links the workspace
-npm run dev --workspace examples/previz-to-gen
+npm install # from the repository root
+npm run dev
 ```
 
 Open the printed project URL to land on the lighthouse workflow. Use the composition rail to open
