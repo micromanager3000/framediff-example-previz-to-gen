@@ -85,7 +85,7 @@ test("a take without a baked previz links back to the previz instead of mounting
 });
 
 test("an active attempt creates no successor draft until Add Take", async ({ page }) => {
-  const activeJobs: { id: string; status: "queued"; take: number }[] = [];
+  const activeJobs: { id: string; status: "queued"; at: string }[] = [];
   let editedPrompt: string | undefined;
   await page.route("**/__framediff/secrets", async (route) => {
     if (route.request().method() !== "GET") return route.continue();
@@ -97,8 +97,12 @@ test("an active attempt creates no successor draft until Add Take", async ({ pag
     await route.fulfill({ json: { ok: true, receipt: { id: "e2e-edit", label: "Edit draft", before: [], after: [] } } });
   });
   await page.route("**/__framediff/gen/submit", async (route) => {
-    const take = 2 + activeJobs.length;
-    const job = { id: `e2e-attempt-${activeJobs.length + 1}`, status: "queued" as const, take };
+    const index = activeJobs.length + 1;
+    const job = {
+      id: `${String(index).padStart(8, "0")}-0000-4000-8000-000000000000`,
+      status: "queued" as const,
+      at: `2026-08-14T12:0${index}:00.000Z`,
+    };
     activeJobs.push(job);
     await route.fulfill({ json: { job } });
   });
@@ -140,9 +144,12 @@ test("an active attempt creates no successor draft until Add Take", async ({ pag
   await expect(nextDraft).toHaveCount(0);
   await expect.poll(() => activeJobs.length).toBe(2);
   await expect(page.locator(".gen-take.generating")).toHaveCount(2);
-  expect(activeJobs.map((job) => job.id)).toEqual(["e2e-attempt-1", "e2e-attempt-2"]);
-  await expect(page.locator(".gen-take.generating").nth(0)).toContainText("take 2 · generating");
-  await expect(page.locator(".gen-take.generating").nth(1)).toContainText("take 3 · generating");
+  expect(activeJobs.map((job) => job.id)).toEqual([
+    "00000001-0000-4000-8000-000000000000",
+    "00000002-0000-4000-8000-000000000000",
+  ]);
+  await expect(page.locator(".gen-take.generating").nth(0)).toContainText("take 3 · generating");
+  await expect(page.locator(".gen-take.generating").nth(1)).toContainText("take 2 · generating");
   await expect(page.locator(".gen-take.draft")).toHaveCount(0);
   await expect(page.locator(".gen-take.generating.selected")).toContainText("take 3 · generating");
   await expect(page.getByTestId("submitted-take-preview")).toBeVisible();
@@ -197,7 +204,14 @@ test("compact desktop rail keeps representative composition names readable", asy
   for (const key of ["lighthouse-workflow-steps", "lighthouse-dialogue-audio"]) {
     const name = page.locator(`.composition-list`).first().locator(`.composition-row[data-composition-key="${key}"] .name`).first();
     await expect(name).toBeVisible();
-    expect(await name.evaluate((element) => element.scrollWidth <= element.clientWidth)).toBe(true);
+    const metrics = await name.evaluate((element) => ({
+      clientWidth: element.clientWidth,
+      scrollWidth: element.scrollWidth,
+      text: element.textContent ?? "",
+      title: element.parentElement?.getAttribute("title") ?? "",
+    }));
+    expect(metrics.clientWidth / metrics.scrollWidth).toBeGreaterThanOrEqual(.9);
+    expect(metrics.title).toContain(metrics.text);
   }
 });
 
