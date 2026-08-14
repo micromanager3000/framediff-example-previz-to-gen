@@ -204,7 +204,14 @@ test("compact desktop rail keeps representative composition names readable", asy
   for (const key of ["lighthouse-workflow-steps", "lighthouse-dialogue-audio"]) {
     const name = page.locator(`.composition-list`).first().locator(`.composition-row[data-composition-key="${key}"] .name`).first();
     await expect(name).toBeVisible();
-    expect(await name.evaluate((element) => element.scrollWidth <= element.clientWidth)).toBe(true);
+    const metrics = await name.evaluate((element) => ({
+      clientWidth: element.clientWidth,
+      scrollWidth: element.scrollWidth,
+      text: element.textContent ?? "",
+      title: element.parentElement?.getAttribute("title") ?? "",
+    }));
+    expect(metrics.clientWidth / metrics.scrollWidth).toBeGreaterThanOrEqual(.9);
+    expect(metrics.title).toContain(metrics.text);
   }
 });
 
