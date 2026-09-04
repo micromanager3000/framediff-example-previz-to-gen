@@ -8,7 +8,36 @@
       "bytes": 2434343,
       "sources": [
         "/__framediff-cache/sha256%3A2bcf5047aaa3b81168c5f468da6ef4981f064387ebf87ee2b6a05f76eaf4b2a3"
-      ]
+      ],
+      "representations": [
+        {
+          "profile": "proxy-360",
+          "contentHash": "sha256:13cbcb65cd16d408de44090df954ea9814861fc46509739de038fca0c4967e6e",
+          "mime": "video/mp4",
+          "bytes": 89058,
+          "width": 640,
+          "height": 360,
+          "durationSeconds": 8
+        },
+        {
+          "profile": "proxy-540",
+          "contentHash": "sha256:62ffd8177a18db7fe27f5974abf557d8ff91e3fe2f006df8fd6ff067fb7cb3c7",
+          "mime": "video/mp4",
+          "bytes": 156663,
+          "width": 960,
+          "height": 540,
+          "durationSeconds": 8
+        },
+        {
+          "profile": "poster",
+          "contentHash": "sha256:1d31d4fb9ce3924fadfba68ac9be5b212fb11082ae3c90b2aaa84e31920a72de",
+          "mime": "image/jpeg",
+          "bytes": 17180,
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "proxy": "sha256:62ffd8177a18db7fe27f5974abf557d8ff91e3fe2f006df8fd6ff067fb7cb3c7"
     },
     "5aa7fd81-9c04-4d91-8c2f-9c3fc4737492": {
       "name": "harborShot.take1.mp4",
@@ -50,7 +79,36 @@
         "requestId": "019f46be-57f6-76e2-bcd2-64da046522ec",
         "seed": 1685979545,
         "at": "2026-07-09T12:02:43.053Z"
-      }
+      },
+      "representations": [
+        {
+          "profile": "proxy-360",
+          "contentHash": "sha256:0b80e363af8025cfb740de20434ecc12ed69cc7a599ae71c58bba63d096e78a5",
+          "mime": "video/mp4",
+          "bytes": 316559,
+          "width": 640,
+          "height": 360,
+          "durationSeconds": 8.041667
+        },
+        {
+          "profile": "proxy-540",
+          "contentHash": "sha256:ae27e6fa4d8877582a1c201fba6855f22206932d40a3a67a5bedded73a79f76d",
+          "mime": "video/mp4",
+          "bytes": 553084,
+          "width": 960,
+          "height": 540,
+          "durationSeconds": 8.041667
+        },
+        {
+          "profile": "poster",
+          "contentHash": "sha256:2fa6205ae30112ec623155256d6277dfa9b3585c1c2b78d605c7308c6e24cc7a",
+          "mime": "image/jpeg",
+          "bytes": 31722,
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "proxy": "sha256:ae27e6fa4d8877582a1c201fba6855f22206932d40a3a67a5bedded73a79f76d"
     },
     "35e930f7-eff5-4e1c-8f4a-4c7df5fd7af9": {
       "name": "harborShot.take2.mp4",
@@ -92,7 +150,36 @@
         "requestId": "019f46c4-8413-7ac3-997e-204e7df91d8f",
         "seed": 1030689473,
         "at": "2026-07-09T12:08:26.715Z"
-      }
+      },
+      "representations": [
+        {
+          "profile": "proxy-360",
+          "contentHash": "sha256:849717696f8798491a99fab0c82b219a7288e11ee4484a5cd686511a2b187d7e",
+          "mime": "video/mp4",
+          "bytes": 462544,
+          "width": 640,
+          "height": 360,
+          "durationSeconds": 8.041667
+        },
+        {
+          "profile": "proxy-540",
+          "contentHash": "sha256:3e5bb2a4e1eb0e068a6982a68422fa340600a5709996ab5d01f474b52bfdd4f6",
+          "mime": "video/mp4",
+          "bytes": 823308,
+          "width": 960,
+          "height": 540,
+          "durationSeconds": 8.041667
+        },
+        {
+          "profile": "poster",
+          "contentHash": "sha256:37399564ddd084a3774b2663cfe7cdfa4ee8e10ecc0c1125d168eb3b78fc61cb",
+          "mime": "image/jpeg",
+          "bytes": 50948,
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "proxy": "sha256:3e5bb2a4e1eb0e068a6982a68422fa340600a5709996ab5d01f474b52bfdd4f6"
     },
     "b5c5fa1e-ef8a-47af-bd45-fb80faf0ad1c": {
       "name": "harborShot.take3.mp4",
@@ -134,7 +221,36 @@
         "requestId": "019f4791-c34c-7eb0-8b7a-222c79f3defc",
         "seed": 260732038,
         "at": "2026-07-09T15:53:59.301Z"
-      }
+      },
+      "representations": [
+        {
+          "profile": "proxy-360",
+          "contentHash": "sha256:95112729743d24339e4fbe8b1dba933c9012c263b1ae25c525a3f7ac0942808f",
+          "mime": "video/mp4",
+          "bytes": 365831,
+          "width": 640,
+          "height": 360,
+          "durationSeconds": 8.041667
+        },
+        {
+          "profile": "proxy-540",
+          "contentHash": "sha256:50d3d06e4c770b832aa1712f647cb0722e322ccc8e1a2e116b4e8f9d47b4490c",
+          "mime": "video/mp4",
+          "bytes": 673997,
+          "width": 960,
+          "height": 540,
+          "durationSeconds": 8.041667
+        },
+        {
+          "profile": "poster",
+          "contentHash": "sha256:b95d77a3eb321269618234b652fcbeac5048eadc925925b300b129c2dc717148",
+          "mime": "image/jpeg",
+          "bytes": 34830,
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "proxy": "sha256:50d3d06e4c770b832aa1712f647cb0722e322ccc8e1a2e116b4e8f9d47b4490c"
     },
     "1fc82e7f-efd3-48d9-9edb-00300d90b698": {
       "name": "coloradowolverine_Photoreal_live-action_cinematic_establishing__e447461d-26a9-4c59-8a08-dc506630cde1.png",
@@ -194,7 +310,36 @@
         "requestId": "019f579a-a420-74e3-8de7-c560b7ecdb3c",
         "seed": 312270799,
         "at": "2026-07-12T18:37:15.944Z"
-      }
+      },
+      "representations": [
+        {
+          "profile": "proxy-360",
+          "contentHash": "sha256:6ca01d8ae58a9cc9b3b9e43633d698484ba487b4574627a71c95bed4dd43b937",
+          "mime": "video/mp4",
+          "bytes": 520819,
+          "width": 640,
+          "height": 360,
+          "durationSeconds": 8.041667
+        },
+        {
+          "profile": "proxy-540",
+          "contentHash": "sha256:263f4622c369102e12e7d33b9d80515bc7afa9c0789f11188fe59d349ea345df",
+          "mime": "video/mp4",
+          "bytes": 921999,
+          "width": 960,
+          "height": 540,
+          "durationSeconds": 8.041667
+        },
+        {
+          "profile": "poster",
+          "contentHash": "sha256:608d7bdfe552e8373dbda6f3070bb1350b8df16e1a0a394793a1df71b7a9ddb3",
+          "mime": "image/jpeg",
+          "bytes": 60798,
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "proxy": "sha256:263f4622c369102e12e7d33b9d80515bc7afa9c0789f11188fe59d349ea345df"
     },
     "02b421d1-16a5-443e-acc0-2095e120f73b": {
       "name": "coloradowolverine_Photoreal_live-action_cinematic_establishing__212b7d06-e927-4547-8b51-3f7b7b70332c.png",
@@ -254,7 +399,36 @@
         "requestId": "019f57b0-f7ff-7443-b745-6b730d68f419",
         "seed": 224577320,
         "at": "2026-07-12T19:01:29.262Z"
-      }
+      },
+      "representations": [
+        {
+          "profile": "proxy-360",
+          "contentHash": "sha256:1df899908608f109e65960b33efa7a8b53085dcf4060b001e1deeeac044fed63",
+          "mime": "video/mp4",
+          "bytes": 439850,
+          "width": 640,
+          "height": 360,
+          "durationSeconds": 8.041667
+        },
+        {
+          "profile": "proxy-540",
+          "contentHash": "sha256:9c202683fccaff39987f42d7ffc5887c5a0881d04d1e2e30eb98c86eb55b4e09",
+          "mime": "video/mp4",
+          "bytes": 804779,
+          "width": 960,
+          "height": 540,
+          "durationSeconds": 8.041667
+        },
+        {
+          "profile": "poster",
+          "contentHash": "sha256:7b19bbbeb181d25e165651f45ef16716a021fffa11087140d669d64502f8eaa7",
+          "mime": "image/jpeg",
+          "bytes": 50830,
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "proxy": "sha256:9c202683fccaff39987f42d7ffc5887c5a0881d04d1e2e30eb98c86eb55b4e09"
     },
     "c214333a-f896-49c5-accb-cad1951ca180": {
       "name": "they-dont-even-ask-for-x-they-just-look-at-you-like-this-v0-3b0hljnmyfrg1.png",
@@ -451,7 +625,45 @@
         "seed": 2044033815,
         "outputKind": "video",
         "at": "2026-07-23T22:17:09.090Z"
-      }
+      },
+      "representations": [
+        {
+          "profile": "proxy-360",
+          "contentHash": "sha256:0467570c8eb41b5fa8646bba7c5fc8dbe6f892dde31ac3d53009b0e7626a215c",
+          "mime": "video/mp4",
+          "bytes": 464666,
+          "width": 202,
+          "height": 360,
+          "durationSeconds": 14.083333
+        },
+        {
+          "profile": "proxy-540",
+          "contentHash": "sha256:c427301242a0054faa05064d860c4ab5578abd2b22953d1eb0ea2e563c2cc011",
+          "mime": "video/mp4",
+          "bytes": 676794,
+          "width": 304,
+          "height": 540,
+          "durationSeconds": 14.083333
+        },
+        {
+          "profile": "proxy-720",
+          "contentHash": "sha256:54376da3a076c9b1d5cd57fe91cd9f795cf01ac169b696ee6a1fabaf92ef5276",
+          "mime": "video/mp4",
+          "bytes": 951532,
+          "width": 406,
+          "height": 720,
+          "durationSeconds": 14.083333
+        },
+        {
+          "profile": "poster",
+          "contentHash": "sha256:4f94988394cec2061598ed94cae526fd5110ae04df8cf21bde13eb2a1a60a061",
+          "mime": "image/jpeg",
+          "bytes": 47233,
+          "width": 576,
+          "height": 1024
+        }
+      ],
+      "proxy": "sha256:54376da3a076c9b1d5cd57fe91cd9f795cf01ac169b696ee6a1fabaf92ef5276"
     }
   }
 }

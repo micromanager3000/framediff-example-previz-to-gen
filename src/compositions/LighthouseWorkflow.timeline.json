@@ -48,7 +48,7 @@
         "composition": "lighthouse-visitor",
         "nestedScale": 0.280556
       },
-      "trimStart": 1.866667
+      "trimStart": 0
     },
     {
       "id": "workflow-elias",
@@ -61,7 +61,7 @@
         "composition": "lighthouse-keeper",
         "nestedScale": 0.280556
       },
-      "trimStart": 1.866667
+      "trimStart": 0
     },
     {
       "id": "workflow-audio",

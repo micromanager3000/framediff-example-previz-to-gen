@@ -1,3 +1,10 @@
 import adapter from "@sveltejs/adapter-static";
 import { vitePreprocess } from "@sveltejs/vite-plugin-svelte";
-export default { preprocess: vitePreprocess(), kit: { adapter: adapter({ fallback: "index.html" }), files: { assets: "public" } } };
+export default {
+  preprocess: vitePreprocess(),
+  kit: {
+    adapter: adapter({ fallback: "index.html" }),
+    files: { assets: "public" },
+    alias: { "@framediff/hyperframes": "vendor/framediff/packages/hyperframes/src/index.ts" },
+  },
+};

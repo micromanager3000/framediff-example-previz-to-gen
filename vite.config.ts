@@ -17,6 +17,7 @@ export default defineConfig({
     alias: [
       { find: /^framediff$/, replacement: fileURLToPath(new URL("./vendor/framediff/packages/framediff/src/index.ts", import.meta.url)) },
       { find: /^framediff\/three$/, replacement: fileURLToPath(new URL("./vendor/framediff/packages/framediff/src/three/index.ts", import.meta.url)) },
+      { find: /^@framediff\/hyperframes$/, replacement: fileURLToPath(new URL("./vendor/framediff/packages/hyperframes/src/index.ts", import.meta.url)) },
     ],
   },
 });
