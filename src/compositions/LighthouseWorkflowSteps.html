@@ -16,7 +16,7 @@
   </style>
 </head>
 <body>
-<main data-hf-id="LighthouseWorkflowSteps" data-duration="14">
+<main data-hf-id="LighthouseWorkflowSteps" data-composition-id="LighthouseWorkflowSteps" data-width="400" data-height="600">
   <div class="kicker" data-hf-id="workflow-kicker">PERFORMANCE BEFORE PIXELS</div>
   <h1 class="title" data-hf-id="workflow-title">The light went dark.</h1>
   <p class="dek" data-hf-id="workflow-description">A quiet two-hander inside the lantern room. The cheap decision is made first: approve the voices, pauses, and emotional turn before spending video credits.</p>
@@ -36,7 +36,8 @@
       progress.style.width = `${Math.max(0, Math.min(1, frame / 419)) * 100}%`;
     } });
     timeline.to(state, { frame: 419, duration: 14, ease: "none" });
-    window.__hyperframesTimeline = timeline;
+    window.__timelines = window.__timelines || {};
+    window.__timelines.LighthouseWorkflowSteps = timeline;
   </script>
 </main>
 </body>
